@@ -3,10 +3,43 @@ header{
     background-color: #333333;
     color: #C0BAB6 ;
 }
+body{   
+    font-size: 13px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+}
 footer{
     background-color: #232323;
     color:#919191;
     height: 50px;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header-nav>ul>li{
+    display: inline-block;
+    margin:0 10px;
+    font-size: medium;
+    justify-content: space-around;
+}
+.main-nav>ul>li{
+    display: inline-block;
+    margin:0 auto;
+    justify-content: space-between;
+    font-size: 13px;
+    max-width: 1000px;
+    padding-right: 22px;
+}
+.headerul{
+    background-color: #232323;
+}
+li {
+        list-style: none;
 }
 main{
     color: #979797;
@@ -17,51 +50,50 @@ color: #919191;
 main a{
     color: #FF9900;
 }
-ul {
-    list-style: none;
-}
 a{
     outline: none;
     text-decoration: none;
     color: #C0BAB6 ;
 }
-body{
-    font-size: 13px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-}
-.right-column{
-    float: right;
-    color: #666666;
-}
-.left-column{
-    float: left;
-}
 
-.headerul{
-    background-color: #232323;
-}
-.main-nav>ul>li{
-    display: inline-block;
-    margin:0 10px;
-    font-size: small;
-    }
-.header-nav>ul>li{
-    display: inline-block;
-    margin:0 10px;
-    font-size: large;
-    }
-.header-title{
-    font-size: 36px;
-    color: #C0BAB6 ;
-}
-.contenedor{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: inherit;
-        max-width: 1000px;
-        margin: 0 auto;
-} 
 img{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
+.right-column{
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    height: inherit;
+    max-width: 1000px;
+    margin: 20px auto;
+} 
+
+.main-bottom{
+    display: grid;
+    width: 960px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px auto;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+}
+.article-horizontal{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    color: #979797;
+}
+.right{
+    float: right;
+    width: 280px;
+    font-size: 15       px;
+
+}
+.h2title{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DEDEDE;
+}
+
