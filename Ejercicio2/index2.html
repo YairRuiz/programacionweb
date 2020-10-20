@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <label>Article name:</label>
+            <input type="text" id="inputArticle">
+            <button onclick="saveArticle();">Save</button>
+        </div>
+
+        <div>
+            <ul id="ulArticles">
+
+            </ul>
+        </div>
+        <div>
+            <label>Car</label> <br>
+            Make:<input type="text" id="inputMake"> <br>
+            Model:<input type="text" id="inputModel"><br>
+            Year:<input type="date" id="inputYear"> <br>
+            <button type="button" class="btn btn-primary" onclick="addCar();">Add</button>
+            <button type="button" class="btn btn-warning" onclick="clearInputs();">Clear</button>
+            <button type="button" class="btn btn-danger" onclick="clearTable();">Delete all</button>
+        </div>
+        <div>
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Make</th>
+                        <th scope="col">Model</th>
+                        <th scope="col">Year</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/scripts2.js"></script>
+</body>
+
+</html>
