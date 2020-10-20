@@ -40,8 +40,6 @@ function clearInputs() {
 
 function clearTable() {
     let old_tbody = document.getElementById('tableBody');
-    let new_tbody = document.createElement('<tbody id="tableBody"> </tbody>');
-
-    old_tbody.parentNode.replaceChild(new_tbody, old_tbody);
+    old_tbody.innerHTML="";
     alert("data deleted!");
 }
