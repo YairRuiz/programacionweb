@@ -73,7 +73,7 @@ function animacion(codigo){
     const codigo_animacion = document.getElementById(codigo);
 
     codigo_animacion.classList.add("playing");
-    setTimeout(() => keyA.classList.remove("playing"), 100);
+    setTimeout(() => codigo_animacion.classList.remove("playing"), 100);
 }
 
   window.onkeydown = onKeyDownHandler;
