@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSockets</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    <h1>WebSockets</h1>
+
+    <div class="chat">
+        <form onsubmit="return addMessage(this)" style="width: 700px; display: flex; justify-content: space-around; align-items: flex-start;">
+            <input type="text" id="username" placeholder="Type username">
+            <textarea name="textarea" rows="5" cols="40" id="text" placeholder="Type something"></textarea>
+    
+            <input type="submit" value="Send">
+        </form>
+        <div  style="width: 150px; height: 200px; overflow: scroll;">
+            <h3>Chat</h3>
+            <div id="messages">
+            </div>
+            <br/>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
