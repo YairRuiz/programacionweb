@@ -1,0 +1,26 @@
+﻿@model TestApp.Library.DAL.Models.Cars_Yair
+<div>
+    Make: @Model.make
+</div>
+
+<div>
+    Model: @Model.model
+</div>
+
+<div>
+    Year: @Model.year
+</div>
+
+<div>
+    Created at: @Model.created_at
+</div>
+
+<div>
+    Is active?:
+    @if (@Model.is_active == true)
+    {
+<span class="text-success">YES</span> }
+            else
+            {
+<span class="text-danger">NO</span>}
+</div>
