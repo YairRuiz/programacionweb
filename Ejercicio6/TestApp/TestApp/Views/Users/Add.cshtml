@@ -1,0 +1,17 @@
+﻿@model TestApp.Library.DAL.Models.Users
+
+<h1>Add User</h1>
+
+
+
+<form asp-action="Add" method="post">
+
+    <input asp-for="first_names" type="text" placeholder="First Names" />
+    <input asp-for="last_names" type="text" placeholder="Last Names" />
+    <input asp-for="email" type="email" placeholder="Emal" />
+    <input asp-for="password" type="password" placeholder="Password" />
+
+    <input type="submit" class="btn btn-success" value="Save" />
+</form>
+
+<a asp-action="Index">Back to list</a>
