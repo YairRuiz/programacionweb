@@ -35,34 +35,43 @@ namespace TestApp.Controllers
             if (String.IsNullOrWhiteSpace(result.Item2))
             {
                 // Todo salio bien, crear sesion.
-                
-               
+                bool moment = false;
+                if (DateTime.Now.Hour >= 8 && DateTime.Now.Hour < 22)
+                {
+                    moment = true;
+                }
+
 
                 var sessionObject = new SessionViewModel()
                 {
                     UserId = result.Item1.user_id,
                     FirstNames = result.Item1.first_names,
-                    LastNames = result.Item1.last_names
-                };
+                    LastNames = result.Item1.last_names,
+                    Email = result.Item1.email,
+                    Password = result.Item1.password,
+                    IsActive = result.Item1.is_active,
+                    CreatedAt = result.Item1.created_at,
+                    ShowPersonsMenu = moment
+            };
 
-                HttpContext.Session.SetJson("SessionObject", sessionObject);
+            HttpContext.Session.SetJson("SessionObject", sessionObject);
 
 
-                return RedirectToAction(nameof(UsersController.Index), "Users");
+            return RedirectToAction(nameof(UsersController.Index), "Users");
 
-            }
+        }
             else
                 ModelState.AddModelError(String.Empty, result.Item2);
 
             return View(model);
-        }
-
-        [HttpGet]
-        public IActionResult Logout()
-        {
-            HttpContext.Session.Clear();
-            return RedirectToAction(nameof(SessionController.Login));
-        }
-
     }
+
+    [HttpGet]
+    public IActionResult Logout()
+    {
+        HttpContext.Session.Clear();
+        return RedirectToAction(nameof(SessionController.Login));
+    }
+
+}
 }

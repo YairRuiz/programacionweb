@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pwP405a7nmmDDf7kskNpJVUgg+W8IWjZ25ARaOu/uotgB7ARZSXfhQPm30g8+g+/h91vZoqnmm9SL78JbpFZtQ==",
+  "dgSpecHash": "QDYctWjdrr+FoRWJPDxS8DlCIc098apFXIpZQQE8v+9X7g5WyyEOnkF3BzW8GEtbxa48gShyyy3U85mMRAi2ow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yair Ruiz\\Desktop\\programacionweb\\TestApp\\TestApp.Library\\TestApp.Library.csproj",
+  "projectFilePath": "C:\\Users\\Yair Ruiz\\Desktop\\MIO\\programacionweb\\Ejercicio6\\TestApp\\TestApp.Library\\TestApp.Library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yair Ruiz\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Yair Ruiz\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

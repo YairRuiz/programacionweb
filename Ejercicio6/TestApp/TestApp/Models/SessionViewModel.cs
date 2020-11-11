@@ -10,6 +10,10 @@ namespace TestApp.Models
         public int UserId { get; set; }
         public string FirstNames { get; set; }
         public string LastNames { get; set; }
-        public int Hour = DateTime.Now.Hour;
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public bool? IsActive { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public bool ShowPersonsMenu { get; set; }
     }
 }

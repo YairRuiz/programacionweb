@@ -22,3 +22,15 @@ C:\Users\Yair Ruiz\Desktop\programacionweb\TestApp\TestApp.Library\obj\Debug\net
 C:\Users\Yair Ruiz\Desktop\programacionweb\TestApp\TestApp.Library\obj\Debug\netcoreapp3.1\TestApp.Library.dll
 C:\Users\Yair Ruiz\Desktop\programacionweb\TestApp\TestApp.Library\obj\Debug\netcoreapp3.1\TestApp.Library.pdb
 C:\Users\Yair Ruiz\Desktop\programacionweb\TestApp\TestApp.Library\obj\Debug\netcoreapp3.1\TestApp.Library.genruntimeconfig.cache
+C:\Users\Yair Ruiz\Desktop\MIO\programacionweb\Ejercicio6\TestApp\TestApp.Library\bin\Debug\netcoreapp3.1\TestApp.Library.deps.json
+C:\Users\Yair Ruiz\Desktop\MIO\programacionweb\Ejercicio6\TestApp\TestApp.Library\bin\Debug\netcoreapp3.1\TestApp.Library.runtimeconfig.json
+C:\Users\Yair Ruiz\Desktop\MIO\programacionweb\Ejercicio6\TestApp\TestApp.Library\bin\Debug\netcoreapp3.1\TestApp.Library.runtimeconfig.dev.json
+C:\Users\Yair Ruiz\Desktop\MIO\programacionweb\Ejercicio6\TestApp\TestApp.Library\bin\Debug\netcoreapp3.1\TestApp.Library.dll
+C:\Users\Yair Ruiz\Desktop\MIO\programacionweb\Ejercicio6\TestApp\TestApp.Library\bin\Debug\netcoreapp3.1\TestApp.Library.pdb
+C:\Users\Yair Ruiz\Desktop\MIO\programacionweb\Ejercicio6\TestApp\TestApp.Library\obj\Debug\netcoreapp3.1\TestApp.Library.csprojAssemblyReference.cache
+C:\Users\Yair Ruiz\Desktop\MIO\programacionweb\Ejercicio6\TestApp\TestApp.Library\obj\Debug\netcoreapp3.1\TestApp.Library.AssemblyInfoInputs.cache
+C:\Users\Yair Ruiz\Desktop\MIO\programacionweb\Ejercicio6\TestApp\TestApp.Library\obj\Debug\netcoreapp3.1\TestApp.Library.AssemblyInfo.cs
+C:\Users\Yair Ruiz\Desktop\MIO\programacionweb\Ejercicio6\TestApp\TestApp.Library\obj\Debug\netcoreapp3.1\TestApp.Library.csproj.CoreCompileInputs.cache
+C:\Users\Yair Ruiz\Desktop\MIO\programacionweb\Ejercicio6\TestApp\TestApp.Library\obj\Debug\netcoreapp3.1\TestApp.Library.dll
+C:\Users\Yair Ruiz\Desktop\MIO\programacionweb\Ejercicio6\TestApp\TestApp.Library\obj\Debug\netcoreapp3.1\TestApp.Library.pdb
+C:\Users\Yair Ruiz\Desktop\MIO\programacionweb\Ejercicio6\TestApp\TestApp.Library\obj\Debug\netcoreapp3.1\TestApp.Library.genruntimeconfig.cache

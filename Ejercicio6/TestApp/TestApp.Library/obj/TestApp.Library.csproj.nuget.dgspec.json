@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yair Ruiz\\Desktop\\programacionweb\\TestApp\\TestApp.Library\\TestApp.Library.csproj": {}
+    "C:\\Users\\Yair Ruiz\\Desktop\\MIO\\programacionweb\\Ejercicio6\\TestApp\\TestApp.Library\\TestApp.Library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yair Ruiz\\Desktop\\programacionweb\\TestApp\\TestApp.Library\\TestApp.Library.csproj": {
+    "C:\\Users\\Yair Ruiz\\Desktop\\MIO\\programacionweb\\Ejercicio6\\TestApp\\TestApp.Library\\TestApp.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yair Ruiz\\Desktop\\programacionweb\\TestApp\\TestApp.Library\\TestApp.Library.csproj",
+        "projectUniqueName": "C:\\Users\\Yair Ruiz\\Desktop\\MIO\\programacionweb\\Ejercicio6\\TestApp\\TestApp.Library\\TestApp.Library.csproj",
         "projectName": "TestApp.Library",
-        "projectPath": "C:\\Users\\Yair Ruiz\\Desktop\\programacionweb\\TestApp\\TestApp.Library\\TestApp.Library.csproj",
+        "projectPath": "C:\\Users\\Yair Ruiz\\Desktop\\MIO\\programacionweb\\Ejercicio6\\TestApp\\TestApp.Library\\TestApp.Library.csproj",
         "packagesPath": "C:\\Users\\Yair Ruiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yair Ruiz\\Desktop\\programacionweb\\TestApp\\TestApp.Library\\obj\\",
+        "outputPath": "C:\\Users\\Yair Ruiz\\Desktop\\MIO\\programacionweb\\Ejercicio6\\TestApp\\TestApp.Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
