@@ -1,0 +1,29 @@
+﻿@model TestApp.Library.DAL.Models.Persons
+
+<div>
+    Name: @Model.first_names
+</div>
+
+<div>
+    Last name: @Model.last_names
+</div>
+
+<div>
+    Email: @Model.email
+</div>
+
+<div>
+    Created at: @Model.created_at
+</div>
+
+<div>
+    Is active?:
+    @if (@Model.is_active == true)
+    {
+        <span class="text-success">YES</span>
+    }
+    else
+    {
+        <span class="text-danger">NO</span>
+    }
+</div>

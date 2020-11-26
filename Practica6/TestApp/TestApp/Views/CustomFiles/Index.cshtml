@@ -1,0 +1,66 @@
+﻿@model List<TestApp.Library.DAL.Models.CustomFiles>
+@{
+    ViewData["Title"] = "Custom Files";
+}
+
+<div class="text-center">
+    <h1 class="display-4">List of Custom Files</h1>
+</div>
+
+<div class="text-right mb-2">
+    <a asp-action="Create" class="btn btn-success">Add new</a>
+</div>
+
+<table class="table table-dark table-hover" >
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Description</th>
+            <th>Path</th>
+            <th>Status</th>
+            <th>Created</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+        <tr>
+            <td>@user.customfile_id</td>
+            <td>@user.description</td>
+            <td>@user.path</td>
+
+            @if (user.is_active == true)
+            {
+                <td>
+                    <label class="text-success">Active</label>
+                </td>
+            }
+            else
+            {
+                <td>
+                    <label class="text-danger">Inactive</label>
+                </td>
+            }
+
+            <td>@user.created_at</td>
+
+            <td>
+                <a asp-action="Details" asp-route-id="@user.customfile_id">Details</a>
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@user.customfile_id">Edit</a>
+            </td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@user.customfile_id">Delete</a>
+            </td>
+            <td>
+                <a target="_blank" asp-action="DownloadFile" asp-route-id="@user.customfile_id">Download file</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+

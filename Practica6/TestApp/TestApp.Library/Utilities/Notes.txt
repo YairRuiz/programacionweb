@@ -1,0 +1,10 @@
+﻿Install EF Core:
+dotnet tool install --global dotnet-ef
+
+
+Move to folder Library with cd command (cd .\TestApp.Library):
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+Migrate database to code:
+dotnet ef dbcontext scaffold "[AQUI VA EL CONNECTIONSTRING]" Microsoft.EntityFrameworkCore.SqlServer -f --context TestAppEntities --use-database-names -o DAL/Models
