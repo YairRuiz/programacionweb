@@ -1,4 +1,5 @@
 var socket = io.connect('http://localhost:8080', { 'forceNew': true });
+var users = [];
 
 socket.on('messages', (data) => {
     console.log(data);
@@ -36,4 +37,25 @@ function addMessage(form) {
         inputMessage.focus();
     }
     return false;
+}
+function verifyUsers(data){
+    data.map((elem)=>{
+        if (users.indexOf(elem.author==-1)) {
+            users.push(elem.author);
+        }
+    })
+
+    let elem = document.getElementById('users')
+    let html = ``
+
+    var uniqs = users.filter(function(item, index, array) {
+        return array.indexOf(item) === index;
+      })
+
+    uniqs.forEach((user)=>{
+        if(user!=undefined)
+            html += `<strong>${user}</strong>`
+    })
+
+    elem.innerHTML = html;
 }
