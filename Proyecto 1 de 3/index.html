@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1 de 3</title>
+    <link rel="stylesheet" href="Css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="modal-result" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1 id="winner-text-result"></h1>
+                </div>
+            </div>
+            <h1>Matching Game</h1>
+            <section class="score-panel">
+                <span class="moves"></span>
+                <div class="restart">
+                    <a onclick="restart()">RESTART</a>
+                </div>
+            </section>
+        </header>
+        <section class="board-container" id="juego">
+            <div class="image-container" data-key="0" onclick="cardSelection(0)"></div>
+            <div class="image-container" data-key="1" onclick="cardSelection(1)"></div>
+            <div class="image-container" data-key="2" onclick="cardSelection(2)"></div>
+            <div class="image-container" data-key="3" onclick="cardSelection(3)"></div>
+            <div class="image-container" data-key="4" onclick="cardSelection(4)"></div>
+            <div class="image-container" data-key="5" onclick="cardSelection(5)"></div>
+            <div class="image-container" data-key="6" onclick="cardSelection(6)"></div>
+            <div class="image-container" data-key="7" onclick="cardSelection(7)"></div>
+            <div class="image-container" data-key="8" onclick="cardSelection(8)"></div>
+            <div class="image-container" data-key="9" onclick="cardSelection(9)"></div>
+            <div class="image-container" data-key="10" onclick="cardSelection(10)"></div>
+            <div class="image-container" data-key="11" onclick="cardSelection(11)"></div>
+            <div class="image-container" data-key="12" onclick="cardSelection(12)"></div>
+            <div class="image-container" data-key="13" onclick="cardSelection(13)"></div>
+            <div class="image-container" data-key="14" onclick="cardSelection(14)"></div>
+            <div class="image-container" data-key="15" onclick="cardSelection(15)"></div>
+        </section>
+    </div>
+</body>
+<script src="js/scripts.js"></script>
+
+</html>

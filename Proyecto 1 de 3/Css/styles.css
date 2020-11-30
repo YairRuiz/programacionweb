@@ -1,0 +1,113 @@
+/****** GENERAL STARTS ******/
+
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        text-transform: full-width;
+    }
+    img{
+        width: 165px;
+        height: 170px;
+        border-radius: 10px;
+    }
+    .image-container{
+        border: 1px solid #fff;
+        width: 165px;
+        height: 170px;
+        border-radius: 10px;
+        background-color: black;
+        cursor: pointer;
+    }
+    
+
+
+/****** GENERAL ENDS ******/
+.board-container{
+    width: auto;
+    min-height: auto;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: rgb(138, 29, 105);
+    border-radius: 10px;
+    border: 1px solid #fff;
+    grid-gap: 40px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.score-panel {
+    text-align: left;
+    width: 660px;
+    margin-bottom: 10px;
+}
+
+.score-panel .restart {
+    float: right;
+    display: inline-block;
+    margin :0 0 0 80px;
+    cursor: pointer;
+}
+
+.deck .card {
+    width: 70px;
+    height: 70px;
+
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    color: #000;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    text-align: center;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+/****** MODAL ENDS *******/
