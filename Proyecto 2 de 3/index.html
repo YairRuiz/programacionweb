@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 2 de 3</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="item header">
+            <a onclick="restart()" style="font-size: 40px; cursor: pointer;">New Game</a>
+            <div id="modal-result" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1 id="winner-text-result"></h1>
+                </div>
+            </div>
+        </div>
+        <div class="item player1" id="player1">
+            <h1 style="font-size: 50px;">Player 1</h1>
+            <h1>Total Score:</h1>
+            <div style="padding-bottom: 50px; font-size: 50px;" id="totalScoreP1">
+
+            </div>
+            <h1 style="font-size: 30px;">Current Score:</h1>
+            <div id="tempScoreP1" style="font-size: 30px;"></div>
+        </div>
+        <div class="item turnpanel">
+            <div style="padding-bottom: 30px; font-size: 30px;">
+                Dice
+                <div id="dado1" style="padding-top: 20px;"></div>
+            </div>
+            <div style="padding-bottom: 30px; font-size: 30px;">
+                Dice
+                <div id="dado2" style="padding-top: 20px;"></div>
+            </div>
+            <button class="boton" onclick="TirarDados()">Roll Dice</button>
+            <button class="boton" onclick="Cambio()">Hold</button>
+        </div>
+        <div class="item" id="player2">
+            <h1 style="font-size: 50px;">Player 2</h1>
+            <h1>Total Score:</h1>
+            <div style="padding-bottom: 50px; font-size: 50px;" id="totalScoreP2"></div>
+            <h1 style="font-size: 30px;">Current Score:</h1>
+            <div id="tempScoreP2" style="font-size: 30px;"></div>
+        </div>
+    </section>
+    
+</body>
+<script src="Js/Script.js"></script>
+</html>
