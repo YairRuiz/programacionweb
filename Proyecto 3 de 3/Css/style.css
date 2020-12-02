@@ -1,0 +1,203 @@
+
+/****** GENERAL START ******/
+a{
+    text-decoration: none;
+    color: white;
+    padding-right: 50px;
+    font-family: cursive;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-color: black;
+}
+
+footer{
+    background-color: rgb(53, 27, 27);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    background-color: rgba(0,0,0,.7); 
+    color: white; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: cursive;
+    text-align: center;
+}
+/****** GENERAL END ******/
+
+.container {
+display: grid;
+grid-template: 50px 1fr 1fr 1fr 1fr 100px/repeat(2, 1fr);
+height: 100vh;
+grid-template-areas: "logo menus"
+                     "jumbotron jumbotron"
+                     "aboutme aboutme"
+                     "portfolio portfolio"
+                     "contact contact"
+                     "footer footer";
+
+                    
+}
+.item{
+    background-color: lightblue;
+   padding: 10px;
+}
+/*** LOGO STYLE ***/
+.item:nth-of-type(1){
+    color: white;
+    display: grid;
+    font-size: 25px;
+    position: fixed;
+    left: 0;
+    background-color: transparent;
+
+}
+/*** MENUS STYLE ***/
+.item:nth-of-type(2){
+    color: white;
+    align-items: center;
+    font-size: 15px;
+    right: 0;
+    position: fixed;
+    background-color: transparent;
+}
+/*** JUMBOTRON STYLE ***/
+.item:nth-of-type(3){
+    color: white;
+    background-image: url(../img/tech4.jpg);
+    background-size: cover;
+    height: 450px;
+    display: inline-block;
+    text-align: center;
+    font-family: "-webkit-pictograph";
+}
+/*** ABOUTME STYLE ***/
+.item:nth-of-type(4){
+    background-color: rgb(20, 20, 20);
+    color: white;
+    display: grid;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+/*** PORTFOLIO STYLE ***/
+.item:nth-of-type(5){
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: grid;
+    grid-template-areas: "tittle tittle"
+                          "text1 foto1"
+                          "foto2 text2";
+    font-size: 30px;
+}
+.tittle{
+    grid-area: tittle;
+    max-height: 100px;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.text1{
+    grid-area: text1;
+    max-width: 540px;
+    display: inline-block;
+    text-align: justify;
+    font-family: "-webkit-pictograph";
+    font-size: 1.45rem;
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+.foto1{
+    grid-area: foto1;
+    margin-left: 75px;
+    margin-bottom: 100px;
+}
+.text2{
+    grid-area: text2;
+    max-width: 540px;
+    display: inline-block;
+    text-align: justify;
+    font-family: "-webkit-pictograph";
+    font-size: 1.45rem;
+    margin-right: 400px;
+    margin-left: 75px;
+    margin-bottom: 100px;
+}
+.foto2{
+    grid-area: foto2;
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+.imgSize{
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+}
+/*** CONTACT STYLE ***/
+.item:nth-of-type(6){
+    background-color: rgb(20, 20, 20);
+    color: white;
+    display: grid;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+/*** FOOOTER STYLE ***/
+.item:nth-of-type(7){
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.text-container{
+max-height: 140px;
+max-width: 1110px;
+display: inline-block;
+text-align: justify;
+font-family: "-webkit-pictograph";
+font-size: 1.45rem;
+}
+
+
+/****** LAYOUT START ******/
+.logo{
+grid-area: logo;
+}
+.menus{
+grid-area: menus;
+}
+    
+.portfolio{
+     grid-area: portfolio;
+}
+.jumbotron{
+    grid-area: jumbotron;
+}
+.aboutme{
+    grid-area: aboutme;
+}
+.contact{
+    grid-area: contact;
+}
+.footer{
+    grid-area: footer;
+}
+
+
+
+/****** LAYOUT END ******/
+
