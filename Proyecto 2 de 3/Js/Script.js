@@ -94,28 +94,28 @@ async function Turno(num1, num2) {
 function Cambio() {
     if (turn == 1) {
         scoreP1 += tempScoreP1;
-        if(GameOver()){
-            return
-        } 
         tempScoreP1=0;
         turn = 2;
         player1Ligth.classList.remove("active");
         player2Ligth.classList.add("active");
         tempScoreP1HTML.innerHTML = `${tempScoreP1}`;
         ScoreP1HTML.innerHTML = `${scoreP1}`;
+        if(GameOver()){
+            return
+        } 
         return turn
     }
     if (turn == 2) {
         scoreP2 += tempScoreP2;
-        if(GameOver()){
-            return
-        } 
         tempScoreP2=0;
         turn = 1;
         player1Ligth.classList.add("active");
         player2Ligth.classList.remove("active");
         tempScoreP2HTML.innerHTML = `${tempScoreP2}`;
         ScoreP2HTML.innerHTML = `${scoreP2}`;
+        if(GameOver()){
+            return
+        } 
         return turn
     }
 }
